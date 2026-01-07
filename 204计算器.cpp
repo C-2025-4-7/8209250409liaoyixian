@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     float a, b;
     char op;
-    cout << "ÇëÊäÈëÕýÈ·µÄ±í´ïÊ½£¨ÐÎÈça+b£¬Ö§³Ö+-*/%ÔËËã£©: ";
+    cout << "è¯·è¾“å…¥æ­£ç¡®çš„è¡¨è¾¾å¼ï¼ˆå½¢å¦‚a+bï¼Œæ”¯æŒ+-*/%è¿ç®—ï¼‰: ";
     cin >> a >> op >> b;
 
     switch (op) {
@@ -29,16 +29,16 @@ int main() {
             cout << a << '/' << b << '=' << c << endl;
         }
         else {
-            cout << "³ýÊý²»ÄÜÎª0£¡" << endl;
+            cout << "é™¤æ•°ä¸èƒ½ä¸º0ï¼" << endl;
         }
         break;
     }
     case '%': {
         if (b == 0) {
-            cout << "³ýÊý²»ÄÜÎª0£¡" << endl;
+            cout << "é™¤æ•°ä¸èƒ½ä¸º0ï¼" << endl;
         }
         else if (static_cast<int>(a) != a || static_cast<int>(b) != b) {
-            cout << "È¡Ä£ÔËËãÒªÇóÕûÊý£¡" << endl;
+            cout << "å–æ¨¡è¿ç®—è¦æ±‚æ•´æ•°ï¼" << endl;
         }
         else {
             int result = static_cast<int>(a) % static_cast<int>(b);
@@ -47,8 +47,8 @@ int main() {
         break;
     }
     default:
-        cout << "²»Ö§³ÖÔËËã·û '" << op << "'" << endl;
-        cout << "ÇëÊ¹ÓÃÒÔÏÂÔËËã·û: +, -, *, /, %" << endl;
+        cout << "ä¸æ”¯æŒè¿ç®—ç¬¦ '" << op << "'" << endl;
+        cout << "è¯·ä½¿ç”¨ä»¥ä¸‹è¿ç®—ç¬¦: +, -, *, /, %" << endl;
         break;
     }
 
